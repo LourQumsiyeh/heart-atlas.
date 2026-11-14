@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Heart Atlas</title>
+<link rel="stylesheet" href="style.css">
+<script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer@3.5.0/dist/model-viewer.min.js"></script>
+<script src="script.js" defer></script>
+</head>
+<body>
+<header>
+  <h1 data-t="title"></h1>
+  <button id="add" data-t="add"></button>
+  <button id="clear" data-t="clear"></button>
+  <button id="lang" data-t="lang"></button>
+  <div id="log"></div>
+</header>
+
+<nav>
+  <a href="#anim" data-t="m1"></a>
+  <a href="#model" data-t="m2"></a>
+  <a href="#" data-t="m3"></a>
+  <a href="#" data-t="m4"></a>
+  <a href="#" data-t="m5"></a>
+  <a href="#" data-t="m6"></a>
+  <a href="#" data-t="m7"></a>
+  <a href="#" data-t="m8"></a>
+</nav>
+
+<main>
+  <section id="anim"><h2>CSS Animation</h2></section>
+  <section id="model">
+    <model-viewer src="assets/human-heart.glb" alt="3D human heart" camera-controls auto-rotate auto-rotate-delay="0" rotation-per-second="25deg" loading="eager" reveal="auto" touch-action="pan-y" shadow-intensity="1" interaction-prompt="none"></model-viewer>
+  </section>
+</main>
+
+<button class="fab" id="top" aria-label="Back to top">♥</button>
+<footer data-t="foot"></footer>
+</body>
+</html>
